@@ -1,0 +1,26 @@
+[
+  {
+      "id_bodega": 1,
+      "name": "Producto 1",
+      "id_producto": 1,
+      "total": 20
+  },
+  {
+      "id_bodega": 2,
+      "name": "Producto 2",
+      "id_producto": 2,
+      "total": 10
+  },
+  {
+      "id_bodega": 3,
+      "name": "Producto 3",
+      "id_producto": 3,
+      "total": 10
+  },
+  {
+      "id_bodega": 4,
+      "name": "Producto 4",
+      "id_producto": 4,
+      "total": 10
+  }
+]

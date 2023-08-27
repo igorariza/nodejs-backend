@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "706e8722-c472-49d7-b0f6-6e3405a57a94",
+		"name": "BackendNodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2700935"
+	},
+	"item": [
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Producto 6\",\n  \"description\": \"Producto 6\",\n  \"estado\": 1,\n  \"created_by\": 1,\n  \"created_at\": 1,\n  \"updated_by\": 1,\n  \"updated_at\": \"\",\n  \"deleted_at\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateInventarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Producto 6\",\n  \"description\": \"Producto 6\",\n  \"estado\": 1,\n  \"created_by\": 1,\n  \"created_at\": 1,\n  \"updated_by\": 1,\n  \"updated_at\": \"\",\n  \"deleted_at\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/products/listallproduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"listallproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBodegas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/bodegas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bodegas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBodegas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\" : \"ABodega 6\",\n  \"id_responsable\": 1,\n  \"estado\" : 1,\n  \"created_by\": 1,\n  \"updated_by\": 1,\n  \"created_at\": \"\",\n  \"updated_at\": \"\",\n  \"deleted_at\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/bodegas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bodegas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Traslados",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id_producto\":1,\n  \"id_bodega_origen\":1,\n  \"id_bodega_destino\":1,\n  \"id_inventario\":1,\n  \"cantidad\":10,\n  \"created_by\":1,\n  \"updated_by\":1,\n  \"updated_at\":\"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/bodegas/traslado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bodegas",
+						"traslado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

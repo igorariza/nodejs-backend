@@ -1,0 +1,10 @@
+{
+  "id_producto": 1,
+  "id_bodega_origen": 1,
+  "id_bodega_destino": 1,
+  "id_inventario": 1,
+  "cantidad": 10,
+  "created_by": 1,
+  "updated_by": 1,
+  "updated_at": ""
+}
