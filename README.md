@@ -1,46 +1,46 @@
-# Backend para Gestión de Inventario
+# Inventory Management Backend
 
-Este es el backend para un sistema de gestión de inventario desarrollado utilizando Node.js y MySQL.
+This is the backend for an inventory management system developed using Node.js and MySQL.
 
-## Tabla de Contenidos
+## Table of Contents
 
-- [Características](#características)
-- [Requisitos Previos](#requisitos-previos)
-- [Puntos de Acceso de la API](#puntos-de-acceso-de-la-api)
-- [Colecciones de Postman](#colecciones-de-postman)
-- [Licencia](#licencia)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [API Endpoints](#api-endpoints)
+- [Postman Collections](#postman-collections)
+- [License](#license)
 
-## Características
+## Features
 
-- Operaciones CRUD para la gestión de elementos de inventario.
-- Registro de eventos para seguimiento de cambios en el inventario.
-- Puntos de acceso de API RESTful para una fácil integración.
+- CRUD operations for inventory management.
+- Event logging for tracking inventory changes.
+- RESTful API endpoints for easy integration.
 
-## Requisitos Previos
+## Prerequisites
 
-Antes de comenzar, asegúrate de cumplir con los siguientes requisitos:
+Before starting, make sure you meet the following requirements:
 
-- Tener Node.js y npm instalados.
-- Tener un servidor MySQL instalado y en funcionamiento.
-- Git para el control de versiones (opcional).
+- Node.js and npm installed.
+- A running MySQL server.
+- Git for version control (optional).
 
-### Instalación
+### Installation
 
-Clona el repositorio en tu máquina local (o descarga el código fuente).
+Clone the repository to your local machine (or download the source code).
 
 ```bash
 git clone https://github.com/igorariza/nodejs-backend.git
 cd nodejs-backend
 ```
 
-Instala las dependencias del proyecto:
+Install the project dependencies:
   
   ```bash 
   npm install
   ```
 
-Configuración
-Crea un archivo .env en la raíz del proyecto para almacenar tus variables de configuración. Aquí tienes un ejemplo:
+Configuration
+Create a .env file in the root of the project to store your configuration variables. Here is an example:
   
   ```bash
   PORT=8080
@@ -51,27 +51,27 @@ Crea un archivo .env en la raíz del proyecto para almacenar tus variables de co
   PORTDB=3306
   ```
 
-Iniciar el Servidor
-Inicia el servidor Node.js:
+Start the Server
+Start the Node.js server:
   
     ```bash
     npm run start
     ```
 
-## Puntos de Acceso de la API
+## API Endpoints
 
-| Método | Punto de Acceso | Descripción |
+| Method | Endpoint | Description |
 | --- | --- | --- |
-| POST | /api/v1/products/ | Crea un nuevo producto. |
-| POST | /api/v1/inventarios/ | Crea un nuevo inventario. |
-| GET | /api/v1/products/listallproduct | Obtiene todos los productos. |
-| GET | /api/v1/bodegas | Obtiene todas las bodegas. |
-| POST | /api/v1/bodegas | Crea una nueva bodega. |
-| PATCH | /api/v1/bodegas/traslado | Realiza un traslado de inventario entre bodegas. |
+| POST | /api/v1/products/ | Creates a new product. |
+| POST | /api/v1/inventarios/ | Creates a new inventory. |
+| GET | /api/v1/products/listallproduct | Retrieves all products. |
+| GET | /api/v1/bodegas | Retrieves all warehouses. |
+| POST | /api/v1/bodegas | Creates a new warehouse. |
+| PATCH | /api/v1/bodegas/traslado | Performs an inventory transfer between warehouses. |
 
-## Colecciones de Postman
+## Postman Collections
 
-Puedes importar las colecciones de Postman para probar los puntos de acceso de la API. Las colecciones se encuentran en el archivo. 
+You can import the Postman collections to test the API endpoints. The collections are located in the file. 
 
 ```bash
 ./BackendNodejs.postman.json

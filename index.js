@@ -8,7 +8,6 @@ const { logErrors, errorHandler, boomErrorHandler } = require('./middlewares/err
 const app = express();
 const port = process.env.PORT || 3000;
 
-//Migration and seed
 migration();
 
 app.use(express.json());

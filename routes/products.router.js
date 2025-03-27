@@ -7,8 +7,6 @@ var {
 
 const router = express.Router();
 
-//6- Realizar un EndPoint que permita listar todos los Productos en
-//orden descendente por el campo “Total”.
 router.get('/listallproduct', async (req, res) => {
   conexion.query(
     'SELECT c.id_bodega, r.name, c.id_producto, f.name, SUM(c.cantidad) total ' +
@@ -24,19 +22,6 @@ router.get('/listallproduct', async (req, res) => {
   );
 });
 
-// Realizar un EndPoint que permita insertar un Producto y a su
-// vez asigne una cantidad inicial del mismo en la tabla
-// Inventarios en una de las bodegas por default.
-// {
-//   "name": "Producto 6",
-//   "description": "Producto 6",
-//   "estado": 1,
-//   "created_by": 1,
-//   "created_at": 1,
-//   "updated_by": 1,
-//   "updated_at": "",
-//   "deleted_at": ""
-// }
 router.post('/', async (req, res) => {
   validatorHandler(createProductSchema, 'body'),
     (createProductSchema = req.body);
@@ -51,9 +36,7 @@ router.post('/', async (req, res) => {
         console.log('error: ', error);
         throw error;
       }
-      //Id del ultimo registro ingresado
       let insertId = results.insertId;
-      //Insertar en la tabla inventarios
       let inventario = {
         id_bodega: 1,
         id_producto: insertId,

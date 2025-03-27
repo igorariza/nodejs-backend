@@ -10,10 +10,10 @@ var conexion = mysql.createConnection({
 
 conexion.connect(function (err) {
   if (err) {
-    console.error('Error de conexion: ' + err.stack);
+    console.error('Connection Error: ' + err.stack);
     return;
   }
-  console.log('Conectado con el identificador ' + conexion.threadId);
+  console.log('Connecting with the identificator' + conexion.threadId);
 });
 
 module.exports = conexion;
